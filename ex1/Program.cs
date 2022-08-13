@@ -21,13 +21,13 @@ int count = 0;
         {
             Console.Write($"A[{i}] = ");
             massive[i] = Convert.ToInt32(Console.ReadLine());
-            if (massive[i]==0)count=count+1;    
+            if (massive[i]>0)count=count+1;    
         }                  
 Console.WriteLine();
 PrintArray(massive);
 Console.WriteLine();
-if (count==0) Console.WriteLine ("Пользователь не вводил цифру 0");               
- else Console.WriteLine ($"Количество введенного числа 0 полльзователем равно - {count}"); 
+if (count==0) Console.WriteLine ("Пользователь не ввел число больше 0");               
+ else Console.WriteLine ($"Количество введенных полльзователем чисел больше 0 равно - {count}"); 
  
 
 
